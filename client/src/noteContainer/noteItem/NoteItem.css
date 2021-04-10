@@ -1,0 +1,25 @@
+.item {
+  color: #222831;
+  background-color: #dddddd;
+  border-radius: 15px;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #f05454;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-btn > button {
+  font-size: 15px;
+}

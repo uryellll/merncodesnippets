@@ -1,0 +1,43 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dddddd;
+  width: 350px;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #242b34, #1f242c);
+  box-shadow: 5px 5px 10px #15181e, -5px -5px 10px #2f3844;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+input,
+select,
+textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+select {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #f05454;
+  border-radius: 5px;
+  height: 2rem;
+  color: #dddddd;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}

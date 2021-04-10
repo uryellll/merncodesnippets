@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #222831;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem 0.5rem;
+}
+
+.main-header-container,
+.main-form-container,
+.main-notes-container {
+  padding: 1rem;
+}
+
+.main-form-container,
+.main-notes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #222831;
+  box-shadow: inset 17px 17px 30px #1b1f26, inset -17px -17px 30px #29313c;
+  margin: 0.5rem;
+}
+
+.main-header-container {
+  margin: 1rem;
+  text-align: center;
+  color: #f05454;
+}
+
+.main-form-container {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+.main-notes-container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (min-width: 720px) {
+  .main-container {
+    padding: 1rem;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 30% 67%;
+    grid-template-areas:
+      ". ."
+      "header header"
+      "form notes";
+  }
+
+  .main-header-container {
+    grid-area: header;
+  }
+
+  .main-form-container {
+    grid-area: form;
+    padding: 1rem;
+  }
+
+  .main-notes-container {
+    padding: 0.5rem;
+    grid-area: notes;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

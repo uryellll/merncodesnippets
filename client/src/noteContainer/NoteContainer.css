@@ -1,0 +1,21 @@
+.note-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.empty-notes {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .note-container {
+    overflow-y: scroll;
+    height: 700px;
+  }
+}
